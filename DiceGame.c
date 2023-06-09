@@ -2,7 +2,12 @@
 #include<stdlib.h>
 
 int main(void){
+  char name[100000];
   int d1,d2;
+
+  printf("What is your name?\n");
+  scanf("%s", name);
+  printf("Hello, %s!\n", name);
   printf("Rolling dice...\n");
   d1 = rand()%6+1;
   d2 = rand()%6+1;
